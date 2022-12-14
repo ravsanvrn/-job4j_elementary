@@ -8,27 +8,30 @@ class MaxTest {
 
     @Test
     public void whenMax1To2Then2() {
-        int left = 1;
-        int right = 2;
-        int result = Max.max(left, right);
+        int one = 1;
+        int two = 2;
+        int result = Max.max(one, two);
         int expected = 2;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    public void whenMax4To2Then4() {
-        int left = 4;
-        int right = 2;
-        int result = Max.max(left, right);
-        int expected = 4;
+    public void whenMax4To2To6Then6() {
+        int one = 4;
+        int two = 2;
+        int tree = 6;
+        int result = Max.max(one, two, tree);
+        int expected = 6;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    public void whenMax5To5Then5() {
-        int left = 5;
-        int right = 5;
-        int result = Max.max(left, right);
+    public void whenMax5To5To2To2hen5() {
+        int one = 5;
+        int two = 5;
+        int tree = 2;
+        int four = 2;
+        int result = Max.max(one, two, tree, four);
         int expected = 5;
         assertThat(result).isEqualTo(expected);
     }
