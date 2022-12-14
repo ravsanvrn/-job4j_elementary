@@ -40,4 +40,13 @@ public class PointTest {
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void whenYToYToZThenOUT() {
+        double expected = 660.20D;
+        Point a = new Point(74, 95, 85);
+        Point b = new Point(-14, 745, 10);
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 }
